@@ -24,6 +24,7 @@ h1 {
 }
 
 .message-box {
+  font-family: cursive;
   margin-top: 25px;
   min-height: 70px;
   font-size: 1.4em;
