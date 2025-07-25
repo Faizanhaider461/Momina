@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Momina</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <div id="sprinkles-container"></div>
+  
+  <div class="container">
+    <h1>🎉 Happy Birthday Momina 🎉</h1>
+    
+    <p class="message-box" id="typewriter"></p>
+
+    <div class="buttons">
+      <button onclick="playMusic()">🎵 Birthday Song</button>
+      <button onclick="startTypewriter()">💌 Wish Message</button>
+      <button onclick="toggleNovels()">🎁 Birthday Gift</button>
+    </div>
+
+    <ul id="novel-list">
+      <li onclick="showTreatMessage('جنّت کے پٹّے')">📚 جنّت کے پٹّے</li>
+      <li onclick="showTreatMessage('نمرا احمد - نمل')">📚 نمرا احمد - نمل</li>
+      <li onclick="showTreatMessage('پیئرِ کامل')">📚 پیئرِ کامل </li>
+      <li onclick="showTreatMessage('مری زات زرہ بے نشاں')">📚 مری زات زرہ بے نشاں</li>
+    </ul>
+
+    <p id="treat-message"></p>
+  </div>
+
+  <audio id="bg-music" src="Happy Birthday Song___ [5u4xTa3LR2U] (mp3cut.net).mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

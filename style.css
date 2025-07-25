@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffe4ec, #dfe9f3);
+  color: #3e2f45;
+  text-align: center;
+}
+
+.container {
+  padding: 30px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  color: #b80069;
+  border: 2px dashed #b80069;
+  padding: 15px;
+  border-radius: 15px;
+  background: #fff0f5;
+}
+
+.message-box {
+  margin-top: 25px;
+  min-height: 70px;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 15px;
+  background: #ffffffd5;
+  border: 2px solid #b80069;
+  border-radius: 10px;
+  color: #4a044e;
+  box-shadow: 0 0 10px #d47bbf;
+}
+
+.buttons {
+  margin: 30px 0;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 8px;
+  border: none;
+  background-color: #b80069;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #870050;
+}
+
+#novel-list {
+  list-style: none;
+  padding: 0;
+  display: none;
+  margin-top: 20px;
+}
+
+#novel-list li {
+  background: #f7d6e0;
+  margin: 10px auto;
+  padding: 12px;
+  max-width: 400px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Noto Nastaliq Urdu', serif;
+}
+
+#novel-list li:hover {
+  background-color: #f3b7cb;
+  color: #4a044e;
+}
+
+#treat-message {
+  margin-top: 15px;
+  font-size: 1.1em;
+  color: #a90042;
+  font-style: italic;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .message-box {
+    font-size: 1.1em;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Sprinkles (Confetti Dots) */
+#sprinkles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sprinkle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #f39c12; /* Default color */
+  animation: sprinkleFall linear infinite;
+}
+
+@keyframes sprinkleFall {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
